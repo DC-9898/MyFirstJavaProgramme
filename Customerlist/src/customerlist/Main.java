@@ -14,3 +14,6 @@ public static void main(String[] args) {
 try (BufferedReader reader = new BufferedReader(new FilePath(filepath))){
      String line;
      
+     // Looping through each line in the file until there's no more data left
+while((line = reader.readLine()) != null){
+    String[] customerData = line.split(",");
