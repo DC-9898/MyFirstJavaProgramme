@@ -17,3 +17,11 @@ try (BufferedReader reader = new BufferedReader(new FilePath(filepath))){
      // Looping through each line in the file until there's no more data left
 while((line = reader.readLine()) != null){
     String[] customerData = line.split(",");
+    
+ // Making sure there are exactly 4 pieces of info (Name, amount, Discount level, year)
+if (customerData.length == 4) {
+    String name = customerData[0].trim();
+    double amount;
+    int discountLevel;
+    int year;
+
