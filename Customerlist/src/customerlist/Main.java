@@ -7,11 +7,11 @@ import java.io.IOException;
 public class Main {
     // Starting point of Java application
 public static void main(String[] args) {
-     // I am adding the file path to the customer.txt file
+     // I am adding the filePath to the customer.txt file
      String filePath = "customer.txt";
     
  //I am using BufferedReader to read data from the customer file
-try (BufferedReader reader = new BufferedReader(new FilePath(filepath))){
+try (BufferedReader reader = new BufferedReader(new FileReader(filePath))){
      String line;
      
      // Looping through each line in the file until there's no more data left
@@ -45,7 +45,20 @@ try {
         System.out.println("Final Amount:" + finalAmount);
         System.out.println("----------------------"); 
 }
+catch (NumberFormatException e){
+       // Catching and printing errors related to data format issues
+       System.out.println("Error parsing data for customer:" + name);}}
 
+else {
+    //If the line dosent have excatly 4 pieces of info it will show an error
+    System.out.println("Invalid data format in line:" + line);
+  }
+ }
+}
+catch (IOException e) {
+    // This will handle any file reading errors
+    System.out.println("Error reading the files:" + e.getMessage());
+}
 }
 
     
