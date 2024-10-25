@@ -58,23 +58,18 @@ else {
 catch (IOException e) {
     // This will handle any file reading errors
     System.out.println("Error reading the files:" + e.getMessage());
+ }
 }
-}
+    //This is a method to calculate the discount based on the discount level
+    private static double calculateDiscount(double amount, int discountLevel) {
+        
 
     
     
                 
                 
-                
-    }
-    
-    
-    
-
-
-
 }
-
-
+    
+}
 }
 
