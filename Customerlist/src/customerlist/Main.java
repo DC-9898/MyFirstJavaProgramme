@@ -8,7 +8,7 @@ public class Main {
     // Starting point of Java application
 public static void main(String[] args) {
      // I am adding the filePath to the customer.txt file
-     String filePath = "customer.txt";
+     String filePath = "src/customers.txt";
     
  //I am using BufferedReader to read data from the customer file
 try (BufferedReader reader = new BufferedReader(new FileReader(filePath))){
@@ -62,14 +62,22 @@ catch (IOException e) {
 }
     //This is a method to calculate the discount based on the discount level
     private static double calculateDiscount(double amount, int discountLevel) {
-        
+        switch (discountLevel) {
+            case 1:
+                // 10% discount
+                return amount * 0.10;
+            case 2:
+                // 15% discount
+                return amount * 0.15;
+            case 3:
+                // 20% discount
+                return amount * 0.20;
+            default:
+                // No discount for 0 because it is an invalid value
+                return 0.0;
+        }
+    }
+}  
 
-    
-    
-                
-                
-}
-    
-}
-}
+
 
