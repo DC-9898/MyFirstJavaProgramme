@@ -8,8 +8,8 @@ public class Main {
     // Starting point of Java application
 public static void main(String[] args) {
      // I am adding the filePath to the customer.txt file
-     String filePath = (args.length > 0) ? args[0] : "customers.txt";
-
+     String filePath = "C:\\Users\\deanc\\OneDrive\\Desktop\\myfirstjavaapp-main\\myfirstjavaapp-main\\customers.txt";
+     
      System.out.println("Attempting to read the file: " + filePath);
     
  //I am using BufferedReader to read data from the customer file
