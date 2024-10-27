@@ -1,20 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+// Author - Dean Carroll
 package myjavaapp;
 
-/**
- *
- * @author deanc
- */
+import java.util.List;
+
 public class Customerlist {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+        //File path to the customer.txt file
+        String filePath = "C:\\\\Users\\\\deanc\\\\OneDrive\\\\Desktop\\\\myfirstjavaapp-main\\\\myfirstjavaapp-main\\\\customers.txt";
+        
+        // Creating a CustomerReader to read customer data from the file
+        CustomerReader reader = new CustomerReader();
+        
+        //Reading the customer data from the file
+        List<String[]> customers = reader.readCustomers(filePath);
+        
+        // Looping through the list of customers and displaying their info
+        for (String[] customerData : customers){
+            if (customerData.length == 4){
+                String name = customerData[0].trim();
+                double amount;
+                int discountLevel;
+                int year;
+                
+                
+            }
+        }
+         
+
+  
     
+    
+    }
 }
