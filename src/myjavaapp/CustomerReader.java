@@ -34,7 +34,7 @@ catch (IOException e) {
     // Handling any file reading errors 
     System.out.println("Error reading the file: " + e.getMessage()); 
 }
-    // This will return the list of customer dat
+    // This will return the list of customer data 
 return customers;
  
  }
