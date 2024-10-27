@@ -14,6 +14,18 @@ public List<String[]> readCustomers(String filePath){
     
     // Im using BufferedReader to read the file line by line
     try (BufferedReader = new BufferedReader(new FileReader(filePath))) {
+    
+        //Looping through each line until theres no more data
+        while ((line = reader.readLine()) != null) {
+         
+            // Splitting each line into customer data sections
+            String[] customerData = line.split(",");
+            
+            
+            
+        }
+        
+    }
         
     }    
   
