@@ -1,20 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+// Author - Dean Carroll
 package myjavaapp;
 
-/**
- *
- * @author deanc
- */
-public class Customerlist {
+import java.util.List;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+public class Customerlist {
+   
+  public static void main(String[] args) {
+      //File path to the customer.txt file
+      String filePath = "customers.txt";
+      
+      //Creating an instance of CustomerReader to read data
+      CustomerReader reader = new CustomerReader();
+  }
+  }
