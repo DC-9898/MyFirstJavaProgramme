@@ -7,7 +7,10 @@ import java.io.IOException;
 public class Main {
     // Starting point of Java application
 public static void main(String[] args) {
-     // I am adding the filePath to the customer.txt file
+    // Print the GitHub repository link
+    System.out.println("Project Github Repository: https://github.com/DC-9898/My-first-Java-CA.git ");
+    
+    // I am adding the filePath to the customer.txt file
      String filePath = "C:\\Users\\deanc\\OneDrive\\Desktop\\myfirstjavaapp-main\\myfirstjavaapp-main\\customers.txt";
      
      System.out.println("Attempting to read the file: " + filePath);
