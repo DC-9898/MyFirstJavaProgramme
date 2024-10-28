@@ -1,4 +1,4 @@
-# My First Java Assessment 1 (CA1)
+# My First Java Programme (CA1)
 
 ## Author
 Dean Carroll
